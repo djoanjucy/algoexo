@@ -1,0 +1,25 @@
+ALGORITHM lecture
+VAR
+    i,compteur,mot,taille:INTEGER;
+    phrase:string;
+    
+BEGIN
+    write ("veuiller entrer une phrase");
+    read(phrase);
+    compteur,voyelle:=0;
+    mot:=1;
+    taille:= lenght(phrase);
+    FOR i FROM 1 TO taille STEP 1  DO
+        compteur:= compteur + 1;
+        IF (taille[i]=" " ) THEN
+            mot:= mot + 1;
+        END_IF
+        IF (taille[i]=a || taille[i]= e || taille[i]=i || taille[i]=o || taille[i]=u| | taille[i]= y) THEN
+            voyelle := voyelle +1;
+        END_IF
+
+    END_FOR
+    
+
+    write("la phrase est compose de :",compteur,"caracteres, de ",mot,"mot et de ",voyelle,"voyelles")
+END
